@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181819"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/aclonica"
+        android:text="login"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <EditText
+        android:id="@+id/passtext"
+        android:layout_width="354dp"
+        android:layout_height="66dp"
+        android:width="200px"
+        android:autoLink="all|web"
+        android:backgroundTint="#179C13"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/actor"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        tools:text="Password" />
+
+    <EditText
+        android:id="@+id/UsernameId"
+        android:layout_width="349dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#3BAE40"
+        android:backgroundTintMode="src_in"
+        android:ems="10"
+        android:fontFamily="@font/actor"
+        android:inputType="text"
+        android:hint="Username"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="147dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#1B7E33"
+        android:backgroundTintMode="screen"
+        android:checkable="false"
+        android:fontFamily="@font/aclonica"
+        android:radius="30px"
+        android:text="Sing In"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textCursorDrawable="@color/white"
+        app:circularflow_defaultRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
